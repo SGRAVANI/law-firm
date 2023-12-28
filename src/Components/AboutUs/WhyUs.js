@@ -9,7 +9,7 @@ export default function WhyUs() {
         { title:"100% Success Rate",text:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer."}
     ]
   return (
-    <div className={styles.whyusWrapper}>
+    <div className={styles.whyusWrapper}  id="about-us">
         <HeadingCompo  heading="Why Choose Us?"/>
         <div className={styles['card-outer']}>
         <div className={styles["card-wrapper"]}>
@@ -20,7 +20,7 @@ consequatduis enim velit mollit Exer."/> */}
   let color;
   if(index%2===1){
     color='var(--gray-bg)';
-    }return <Card text={ele.text} title={ele.title} color={color}  />} )}
+    }return <Card key={`card-${index}`} text={ele.text} title={ele.title} color={color}  />} )}
         </div>
     </div>
     </div>

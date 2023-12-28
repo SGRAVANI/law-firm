@@ -19,30 +19,30 @@ export default function PracticeArea() {
         let list =imgData.map((ele,index)=>{
             if(index%2===0)
             {
-                console.log(ele.img1.src)
+             //   console.log(ele.img1.src)
     
-    return (<><div className={styles['even-1']}><img src={ele.img1.src} /><h3 className={styles['img-caption']}>{ele.img1.text}</h3></div> 
+    return (<div key={`pa-${index}`}><div className={styles['even-1']}><img src={ele.img1.src} /><h3 className={styles['img-caption']}>{ele.img1.text}</h3></div> 
                 <div className={styles['even-2']}>
                     <img src={ele.img2.src} />
                     <h3 className={styles['img-caption']}>{ele.img2.text}</h3>
                 </div>
-                </>)
+                </div>)
             }
             else{
-                return (<><div   className={styles['odd-1']}> <img src={ele.img1.src} />
+                return (<div key={`pa-${index}`}><div   className={styles['odd-1']}> <img src={ele.img1.src} />
                 <h3 className={styles['img-caption']}>{ele.img1.text}</h3></div> 
                 <div className={styles['odd-2']}>
                     
                     <img src={ele.img2.src} />
                     <h3 className={styles['img-caption']}>{ele.img2.text}</h3>
                 </div>
-                </>)
+                </div>)
             }
         })
         return list;
     }
   return (
-    <div className={styles.practiceAreaWrapper}>
+    <div className={styles.practiceAreaWrapper} id="practice-area">
         <HeadingCompo heading="Area of Practices" />
         <div className={styles.gallary}>
             {getGrid()}

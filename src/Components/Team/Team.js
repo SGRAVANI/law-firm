@@ -32,7 +32,7 @@ export default function Team() {
     return list;
  }
     return (
-    <div className={styles.teamWrapper}>
+    <div className={styles.teamWrapper} id="attorneys">
         <HeadingCompo heading="Our Team" />
         <div className={styles.teamDetail} >
            {generateMemberCard()}

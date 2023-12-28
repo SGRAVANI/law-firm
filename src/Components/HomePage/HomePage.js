@@ -8,22 +8,26 @@ import PracticeArea from '../PracticeArea/PracticeArea'
 import Team from '../Team/Team'
 import ClientReview from '../Carousel/ClientReview'
 import Faq from '../Faq/Faq'
+import NewsLetterSubscription from '../NewsLetterSubscription/NewsLetterSubscription'
+import Footer from '../Footer/Footer'
 export default function HomePage() {
   return (
      <>
-      <HeroSection/>
+      <HeroSection />
        
     <div className='container'>
     < div className={styles.wrapper}>
        
         <AboutUs/>
         <WhyUs/>
-        <PracticeArea/>
+        <PracticeArea />
         <ClientReview/>
-        <Team/> 
+        <Team /> 
         <Faq/>
+        <NewsLetterSubscription/>
     </div>
     </div>
+    <Footer/>
     </>  
   )
 }

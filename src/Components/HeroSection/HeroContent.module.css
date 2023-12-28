@@ -75,6 +75,7 @@
    cursor: pointer;
    outline: none;
     border: none;
+    width: max-content;
 }
 .btn-style:active{
     outline: none;
@@ -169,7 +170,21 @@
       
         /* padding-right:10px */
     }
+    /* .input-wrapper{
+        column-gap:2px;
+    }  */
+    .inputField{
+        column-gap:0;
+        
+    }
+    .input{
+        font-size: 12px;
+        padding-right: 0;
     
-
    
   }
+  .btn-style{
+    font-size: 12px;
+    padding : 5px 10px;
+  }
+}
