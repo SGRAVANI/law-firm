@@ -7,6 +7,7 @@ import styles from "./HomePage.module.css"
 import PracticeArea from '../PracticeArea/PracticeArea'
 import Team from '../Team/Team'
 import ClientReview from '../Carousel/ClientReview'
+import Faq from '../Faq/Faq'
 export default function HomePage() {
   return (
      <>
@@ -20,6 +21,7 @@ export default function HomePage() {
         <PracticeArea/>
         <ClientReview/>
         <Team/> 
+        <Faq/>
     </div>
     </div>
     </>  
