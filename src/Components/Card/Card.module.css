@@ -41,6 +41,7 @@
     width: max-content;
     border: none;
     outline: none;
+    color:var(--black);
 }
 .btn:hover{
     filter: brightness(0.8);

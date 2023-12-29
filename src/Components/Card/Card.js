@@ -18,7 +18,7 @@ export default function Card({title,text,color,designation,src}) {
         {designation?<h6 className={styles['designation']}>{designation}</h6>:null}
         </div>
         <p className={styles.para}>{text}</p>
-        <button className={styles.btn}>Read More</button>
+       { !designation &&<button className={styles.btn}>Read More</button>}
 
     </div>
   )

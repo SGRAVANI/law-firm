@@ -35,7 +35,7 @@ function getCard()
   if(index%2===1){
     color='var(--gray-bg)';
     }
-        return  <SwiperSlide key={ele.id} ><Card title={ele.title} designation={ele.designation} text={ele.text} src={ele.src} color={color}/></SwiperSlide>
+        return  <SwiperSlide key={ele.id} ><Card title={ele.title} designation={ele.designation} text={ele.text} src={ele.src} color={color} /></SwiperSlide>
     })
     return list;
 }
